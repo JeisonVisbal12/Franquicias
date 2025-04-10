@@ -2,5 +2,5 @@ aws:
   dynamodb:
     region: us-east-1
     endpoint: https://dynamodb.us-east-1.amazonaws.com
-    accessKey: AKIAUECIGOYEN7O6B2K7
-    secretKey: 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
+    accessKey:  ${AWS_ACCESS_KEY}
+    secretKey:  ${AWS_SECRET_KEY}
