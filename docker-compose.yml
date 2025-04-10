@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  franquicia-app:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+    restart: unless-stopped
